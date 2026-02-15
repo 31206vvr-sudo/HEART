@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Expressing My Love To My Lovable Valentine 💖</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+    <!-- AOS animation -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Music Button -->
+<div class="music-control">
+    <button onclick="toggleMusic()">🎵 Play Our Song</button>
+    <audio id="bgMusic" loop>
+        <source src="music/perfect.mp3" type="audio/mpeg">
+    </audio>
+</div>
+
+
+<!-- Floating Hearts Background -->
+<div class="hearts"></div>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="hero-box">
+        <h1>To My Dear Kutty Papa 💕</h1>
+        <p>From meow 🐱 to eli 🐭, forever and always.</p>
+        <p class="date">Since January 30 💌</p>
+    </div>
+</section>
+
+
+<!-- LOVE TIMER SECTION -->
+<section class="timer">
+    <div class="timer-box">
+        <h2>We Have Been Together For 💞</h2>
+        <div id="loveTimer"></div>
+    </div>
+</section>
+
+<section class="letter">
+    <div class="letter-box">
+        <h2>A Letter For You My Dear Pondati💌</h2>
+        <p id="typewriter"></p>
+    </div>
+</section>
+
+
+
+<!-- GALLERY -->
+<section class="gallery">
+    <h2 data-aos="fade-up">Our Cute Memories 📸</h2>
+
+    <div class="photo-grid">
+        <img src="images/img1.jpeg" data-aos="zoom-in">
+        <img src="images/img2.jpeg" data-aos="zoom-in">
+        <img src="images/img3.jpeg" data-aos="zoom-in">
+        <img src="images/img4.jpeg" data-aos="zoom-in">
+        <img src="images/img5.jpeg" data-aos="zoom-in">
+        <img src="images/img6.jpeg" data-aos="zoom-in">
+        <img src="images/img7.jpeg" data-aos="zoom-in">
+        <img src="images/img8.jpeg" data-aos="zoom-in">
+    </div>
+</section>
+
+<!-- LOVE SECTION -->
+<section class="love">
+    <h2 data-aos="fade-up">Why I Love You 💗</h2>
+
+    <ul>
+        <li data-aos="fade-right">Your smile heals my worst days.</li>
+        <li data-aos="fade-left">You make life softer and brighter.</li>
+        <li data-aos="fade-right">You understand me like no one else.</li>
+        <li data-aos="fade-left">Every memory with you feels magical.</li>
+        <li data-aos="fade-right">You are my peace, my comfort, my home.</li>
+    </ul>
+</section>
+
+<!-- SURPRISE -->
+<section class="surprise">
+    <button onclick="showLove()">Click Here 💖</button>
+    <h3 id="message"></h3>
+</section>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<script src="script.js"></script>
+
+<!-- SECRET SECTION -->
+<section class="secret">
+    <button class="secret-btn" onclick="askPassword()">Unlock Our Private World 🔐💖</button>
+</section>
+
+<!-- SECRET POPUP -->
+<div id="secretPopup" class="popup">
+    <div class="popup-content">
+        <h2>Our Hidden Memories 💕</h2>
+
+        <div class="secret-gallery">
+            <img src="images/secret1.jpeg">
+            <img src="images/secret2.jpeg">
+            <img src="images/secret3.jpeg">
+            <img src="images/secret4.jpeg">
+            <img src="images/secret5.jpeg">
+            <img src="images/secret6.jpeg">
+            <img src="images/secret7.jpeg">
+            <img src="images/secret8.jpeg">
+        </div>
+
+        <button onclick="closeSecret()">Close 💌</button>
+    </div>
+</div>
+
+
+</body>
+</html>
